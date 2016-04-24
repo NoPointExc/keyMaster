@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/keyAlias"
+        android:text="@string/authority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="30dp"/>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:onClick="deleteKey"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+
+        <Button
+            android:id="@+id/encryptButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/encrypt"
+            android:onClick="encrypt"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+
+        <Button
+            android:id="@+id/decryptButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/decrypt"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+    </LinearLayout>
+
+
+</LinearLayout>
